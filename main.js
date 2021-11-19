@@ -42,7 +42,7 @@ function init()
 }
 window.addEventListener("load", init, false);
 
-/**
+/*
 Generate a new random program
 */
 function randomProg()
@@ -70,7 +70,7 @@ function randomProg()
     location.hash = '';
 }
 
-/**
+/*
 Reset the program state
 */
 function restartProg()
@@ -96,23 +96,23 @@ console.info = console.info || function(){};
 // Image update code
 //============================================================================
 
-/**
+/*
  Map of symbols (numbers) to colors
- */
+*/
 var colorMap = [
-    255,255,255,    // White
+    255,255,255,    // White // Initial symbol color
     0  ,255,255,
     255,255,0  ,
     255,0  ,255,
-    255,0  ,0  ,    // Initial symbol color
+    255,0  ,0  ,    
     0  ,0  ,0  ,    // Black
     0  ,255,0  ,    // Green
     0  ,0  ,255,    // Blue
 ];
 
-/***
+/*
  Time per update, in milliseconds
- */
+*/
 var UPDATE_TIME = 40;
 
 function slowProg()
@@ -128,12 +128,12 @@ function fastProg()
     UPDATE_ITRS = 350000;
     console.log('UPDATE_TIME = ',UPDATE_TIME);
 }
-/**
- Maximum iterations per update
- */
+/*
+Maximum iterations per update
+*/
 var UPDATE_ITRS = 350000;
 
-/**
+/*
 Update the rendering
 */
 function updateRender()
