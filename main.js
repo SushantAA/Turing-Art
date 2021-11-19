@@ -101,8 +101,8 @@ console.info = console.info || function(){};
 */
 var colorMap = [
     255,255,255,    // White // Initial symbol color
-    255,255,0  ,
-    0  ,255,0  ,    
+    0  ,255,0  ,
+    255,255,0  ,   
     255,0  ,255,
     0  ,255,255,
     255,0  ,0  ,    
