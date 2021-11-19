@@ -100,14 +100,20 @@ console.info = console.info || function(){};
  Map of symbols (numbers) to colors
 */
 var colorMap = [
-    255,255,255,    // White // Initial symbol color
-    0  ,255,0  ,
-    255,255,0  ,   
-    255,0  ,255,
+    252, 81, 133,
+    67, 221, 230,
+    244, 250, 156,
+    244, 105, 169,
+    186, 83, 222,
+    136, 190, 245,
+    255,255,255,    // White
     0  ,255,255,
-    255,0  ,0  ,    
-    0  ,0  ,0  ,    
-    0  ,0  ,255,  
+    255,255,0  ,
+    255,0  ,255,
+    255,0  ,0  ,    // Initial symbol color
+    0  ,0  ,0  ,    // Black
+    0  ,255,0  ,    // Green
+    0  ,0  ,255,    // Blue
 ];
 
 /*
