@@ -101,13 +101,13 @@ console.info = console.info || function(){};
 */
 var colorMap = [
     255,255,255,    // White // Initial symbol color
-    0  ,255,255,
     255,255,0  ,
+    0  ,255,0  ,    
+    0  ,255,255,
     255,0  ,255,
     255,0  ,0  ,    
-    0  ,0  ,0  ,    // Black
-    0  ,255,0  ,    // Green
-    0  ,0  ,255,    // Blue
+    0  ,0  ,0  ,    
+    0  ,0  ,255,  
 ];
 
 /*
