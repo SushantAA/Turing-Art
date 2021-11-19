@@ -5,11 +5,11 @@ var ACTION_DOWN  = 3;
 var NUM_ACTIONS  = 4;
 
 /*
-N states, one start state
-K symbols
-4 actions (left, right up, down)
+    N states, one start state
+    K symbols
+    4 actions (left, right up, down)
 
-N x K -> N x K x A
+    N x K -> N x K x A
 */
 function Program(numStates, numSymbols, mapWidth, mapHeight)
 {
@@ -23,18 +23,18 @@ function Program(numStates, numSymbols, mapWidth, mapHeight)
         'must have at least 2 symbols'
     );
 
-    /// Number of states and symbols
+    // Number of states and symbols
     this.numStates = numStates;
     this.numSymbols = numSymbols;
 
-    /// Image dimensions
+    // Image dimensions
     this.mapWidth = mapWidth;
     this.mapHeight = mapHeight;
 
-    /// Transition table
+    // Transition table
     this.table = new Int32Array(numStates * numSymbols * 3);
 
-    /// Map (2D tape)
+    // Map (2D tape)
     this.map = new Int32Array(mapWidth * mapHeight); 
 
     // Generate random transitions
@@ -69,14 +69,14 @@ Program.prototype.setTrans = function (st0, sy0, st1, sy1, ac1)
 
 Program.prototype.reset = function ()
 {
-    /// Start state
+    // Start state
     this.state = 0;
 
-    /// Top-left corner
+    // Top-left corner
     this.xPos = 0;
     this.yPos = 0;
 
-    /// Iteration count
+    // Iteration count
     this.itrCount = 0;
 
     // Initialize the image
